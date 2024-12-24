@@ -12,7 +12,7 @@ An fork (aberration) of the awesome [favicon-cheat-sheet] by [@audreyfeldroy].
 
 For the main favicon itself, it's best for cross-browser compatibility not to
 use any HTML. Just name the file `favicon.ico` and place it in the root of your
-domain. [^1][^2]
+domain. [^1], [^2]
 
 This works in every desktop browser/version all the way back to IE6, except for SeaMonkey. [^1]
 
@@ -136,38 +136,18 @@ Pinned tabs in Safari 9+ use an SVG vector mask for the favicon instead of any o
 <link rel="mask-icon" href="icon.svg" color="#ff0000">
 ```
 
-## Helpful Tools
+## Tools
 
-I recommend:
+- [OptiPNG](https://sourceforge.net/projects/optipng/)
+- [ImageMagick](https://imagemagick.org/)
 
-1. OptiPNG, to optimize .png files before putting them into an .ico: http://optipng.sourceforge.net/
-2. ImageMagick, to create an .ico from .png files: http://blog.morzproject.com/convert-multiple-png-images-into-a-single-icon-file/ & http://www.imagemagick.org/Usage/thumbnails/#favicon
-
-```shell
-convert favicon-16.png favicon-32.png favicon.ico
-```
-
-Others that I haven't tried:
-
-- Favic-o-matic: http://www.favicomatic.com - A favicon generator that cares of .ico, .png and HTML code to make your website shine on every platform, browser or device
-- Ubuntu/Debian package `icoutil` (Fedora package `icoutils`_) provides the program `icotool` which creates .ico from .png files.
-- MSDN recommends this web-based .ico creator: http://www.xiconeditor.com
-- Resize favicons: http://faviconer.com
-- More resizing: https://github.com/abrkn/icon
-- Dynamically setting favicons: https://github.com/HenrikJoreteg/favicon-setter
-- Fancy favicon tricks: https://github.com/component/piecon
-- Web Icon - a simple shell script that generates favicon and touch icons: https://github.com/emarref/webicon
-- Icon Slate app (OS X): https://itunes.apple.com/us/app/icon-slate/id439697913
-- png2ico wrapper for ImageMagick: https://github.com/bebraw/png2ico
-- `GIMP`_: export as .ico, each layer is saved as an image
-
-.. _`icoutils`: https://apps.fedoraproject.org/packages/icoutils
-.. _`GIMP`: https://www.gimp.org/
+  ```shell
+  convert favicon-16.png favicon-32.png favicon.ico
+  ```
 
 ## Forcing a Favicon Refresh
 
-Not normally needed. This is only for those frustrating times when you can't
-get your favicon to refresh, during development:
+Not normally needed. This is only for those frustrating times when you can't get your favicon to refresh, during development:
 
 - Clear the browser cache on Windows (Ctrl+F5 or Ctrl+Shift+R) and on Mac (Command + Shift + R).
 - Also close and reopen browser if IE.
@@ -180,8 +160,7 @@ get your favicon to refresh, during development:
 <link rel="icon" sizes="16x16 32x32" href="/favicon.ico?v=2">
 ```
 
-For large versioned deployments, if all site visitors need their favicon
-force-refreshed in an extreme situation:
+For large versioned deployments, if all site visitors need their favicon force-refreshed in an extreme situation:
 
 - Add explicit HTML markup (customize the sizes part) and put your version
   number in the filename.
@@ -249,11 +228,7 @@ Some proxies and load balancers can fail to read query strings in edge cases.
 
 ## Contribute!
 
-Send pull requests if you have anything to add/change, providing citations
-and justification. I'd love to see this improve.
-
-Note on March 6, 2020: I'm behind on merging PRs but am slowly catching up.
-Bear with me while I get this repo caught up. ❤️
+Send pull requests if you have anything to add/change, providing citations and justification. I'd love to see this improve.
 
 ## References
 
