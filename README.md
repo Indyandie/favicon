@@ -6,60 +6,56 @@
 
 A fork (aberration) of the awesome [favicon-cheat-sheet] by [@audreyfeldroy].
 
-## The HTML
+## Favicon Support
 
-### Basics
+All modern browser should use the `favicon.ico` at the root of the domain.
 
-For the main favicon itself, it's best for cross-browser compatibility not to use any HTML. Just name the file `favicon.ico` and place it in the root of your domain. [^1], [^2]
+### IOS & Android (Optional)
 
-This works in every desktop browser/version all the way back to IE6, except for SeaMonkey. [^1]
-
-#### Optional But Encouraged
-
-You probably also want the following:
-
-1. Touch icon for iOS 2.0+ and Android 2.1+:
-
+1. Add `apple-touch-icon-180x180.png` and/or `apple-touch-icon-180x180-precomposed.png` files to the root of the domain, this should suffice for IOS.
+2. Android may require the following.
    ```html
-   <link rel="apple-touch-icon-precomposed" href="path/to/favicon-180.png">
+   <link rel="apple-touch-icon" href="/apple-touch-icon-180x180.png">
+   <link rel="apple-touch-icon-precomposed" href="/apple-touch-icon-180x180-precomposed.png">
    ```
 
-## Very Optional, for the Obsessive
+### Almost All Favicon (Obsessive)
 
-If you're obsessive, you want all this too:
+1. Add largest to smallest apple-touch-icons to the root domain, and the `HTML` links [^3]:
 
-1. Largest to smallest apple-touch-icons [^3]:
+   - `apple-touch-icon-192x192.png`
+   - `apple-touch-icon-192x192-precomposed.png`
+   - `apple-touch-icon-180x180.png`
+   - `apple-touch-icon-180x180-precomposed.png`
+   - `apple-touch-icon-152x152.png`
+   - `apple-touch-icon-152x152-precomposed.png`
+   - `apple-touch-icon-120x120.png`
+   - `apple-touch-icon-120x120-precomposed.png`
+   - `apple-touch-icon-76x76.png`
+   - `apple-touch-icon-76x76-precomposed.png`
+   - `apple-touch-icon-57x57.png`
+   - `apple-touch-icon-57x57-precomposed.png`
+   - `apple-touch-icon.png` (`180px`)
+   - `apple-touch-icon-precomposed.png` (`180px`)
 
-   ```html
-   <!-- For Iphone 6 plus running iOS 8: -->
-   <link rel="apple-touch-icon-precomposed" sizes="180x180" href="/path/to/favicon-180.png">
+     ```html
+     <link rel="apple-touch-icon-precomposed" sizes="192x192" href="/apple-touch-icon-192x192.png">
+     <link rel="apple-touch-icon-precomposed" sizes="192x192" href="/apple-touch-icon-192x192-precomposed.png">
+     <link rel="apple-touch-icon-precomposed" sizes="180x180" href="/apple-touch-icon-180x180.png">
+     <link rel="apple-touch-icon-precomposed" sizes="180x180" href="/apple-touch-icon-180x180-precomposed.png">
+     <link rel="apple-touch-icon-precomposed" sizes="152x152" href="/apple-touch-icon-152x152.png">
+     <link rel="apple-touch-icon-precomposed" sizes="152x152" href="/apple-touch-icon-152x152-precomposed.png">
+     <link rel="apple-touch-icon-precomposed" sizes="120x120" href="/apple-touch-icon-120x120.png">
+     <link rel="apple-touch-icon-precomposed" sizes="120x120" href="/apple-touch-icon-120x120-precomposed.png">
+     <link rel="apple-touch-icon-precomposed" sizes="76x76" href="/apple-touch-icon-76x76.png">
+     <link rel="apple-touch-icon-precomposed" sizes="76x76" href="/apple-touch-icon-76x76-precomposed.png">
+     <link rel="apple-touch-icon-precomposed" sizes="57x57" href="/apple-touch-icon-57x57.png">
+     <link rel="apple-touch-icon-precomposed" sizes="57x57" href="/apple-touch-icon-57x57-precomposed.png">
+     <link rel="apple-touch-icon-precomposed" href="/apple-touch-icon.png">
+     <link rel="apple-touch-icon-precomposed" href="/apple-touch-icon-precomposed.png">
+     ```
 
-   <!-- For iPad with high-resolution Retina display running iOS ≥ 7: -->
-   <link rel="apple-touch-icon-precomposed" sizes="152x152" href="/path/to/favicon-152.png">
-
-   <!-- For iPad with high-resolution Retina display running iOS ≤ 6: -->
-   <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/path/to/favicon-144.png">
-
-   <!-- For iPhone with high-resolution Retina display running iOS ≥ 7: -->
-   <link rel="apple-touch-icon-precomposed" sizes="120x120" href="/path/to/favicon-120.png">
-
-   <!-- For iPhone with high-resolution Retina display running iOS ≤ 6: -->
-   <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/path/to/favicon-114.png">
-
-   <!-- For first- and second-generation iPad: -->
-   <link rel="apple-touch-icon-precomposed" sizes="76x76" href="/path/to/favicon-76.png">
-
-   <!-- For non-Retina iPhone, iPod Touch, and Android 2.1+ devices: -->
-   <link rel="apple-touch-icon-precomposed" href="/path/to/favicon-57.png">
-   ```
-
-2. Favicons targeted to any additional png sizes that you add that aren't covered above:
-
-   ```html
-   <link rel="icon" href="/path/to/favicon-32.png" sizes="32x32">
-   ```
-
-3. Favicon Chrome for Android
+2. Favicon Chrome for Android
 
    ```html
    <link rel="shortcut icon" sizes="196x196" href="/path/to/favicon-196.png">
@@ -85,18 +81,20 @@ But keep in mind that icons with complex detail often don't downscale well. Ofte
 
 If you're obsessive, create these too:
 
-| Sizes   | Name            | Purpose                                                              |
-| ------- | --------------- | -------------------------------------------------------------------- |
-| 32x32   | favicon-32.png  | Certain old but not too old Chrome versions mishandle ico            |
-| 57x57   | favicon-57.png  | Standard iOS home screen (iPod Touch, iPhone first generation to 3G) |
-| 76x76   | favicon-76.png  | iPad home screen icon                                                |
-| 96x96   | favicon-96.png  | GoogleTV icon                                                        |
-| 120x120 | favicon-120.png | iPhone retina touch icon (Change for iOS 7: up from 114x114)         |
-| 128x128 | favicon-128.png | Chrome Web Store icon                                                |
-| 144x144 | favicon-144.png | IE10 Metro tile for pinned site                                      |
-| 152x152 | favicon-152.png | iPad retina touch icon (Change for iOS 7: up from 144x144)           |
-| 180x180 | favicon-180.png | iPhone 6 plus                                                        |
-| 196x196 | favicon-196.png | Chrome for Android home screen icon                                  |
+| Sizes   | Name            | Purpose                                                                  |
+| ------- | --------------- | ------------------------------------------------------------------------ |
+| 32x32   | favicon-32.png  | Certain old but not too old Chrome versions mishandle ico                |
+| 48x48   | favicon-48.png  | [Android Devices](https://en.wikipedia.org/wiki/Favicon#Android_devices) |
+| 57x57   | favicon-57.png  | Standard iOS home screen (iPod Touch, iPhone first generation to 3G)     |
+| 76x76   | favicon-76.png  | iPad home screen icon                                                    |
+| 96x96   | favicon-96.png  | GoogleTV icon                                                            |
+| 120x120 | favicon-120.png | iPhone retina touch icon (Change for iOS 7: up from 114x114)             |
+| 128x128 | favicon-128.png | Chrome Web Store icon                                                    |
+| 144x144 | favicon-144.png | IE10 Metro tile for pinned site                                          |
+| 152x152 | favicon-152.png | iPad retina touch icon (Change for iOS 7: up from 144x144)               |
+| 180x180 | favicon-180.png | iPhone 6 plus                                                            |
+| 192x192 | favicon-192.png | [Android Devices](https://en.wikipedia.org/wiki/Favicon#Android_devices) |
+| 196x196 | favicon-196.png | Chrome for Android home screen icon                                      |
 
 ## ICO File
 
@@ -225,11 +223,8 @@ Send pull requests if you have anything to add/change, providing citations and j
 
 [^5]: http://blog.morzproject.com/convert-multiple-png-images-into-a-single-icon-file/
 
-- http://mathiasbynens.be/notes/rel-shortcut-icon <-- special thanks [@mathiasbynens]
-- http://mathiasbynens.be/notes/touch-icons <-- special thanks [@mathiasbynens]
 - http://www.jonathantneal.com/blog/understand-the-favicon/
 - https://en.wikipedia.org/wiki/Favicon.ico
 - http://snook.ca/archives/design/making_a_good_favicon
 - http://www.netmagazine.com/features/create-perfect-favicon
 - http://www.ravelrumba.com/blog/android-apple-touch-icon/
-- http://msdn.microsoft.com/en-us/library/ie/gg491740(v=vs.85).aspx
