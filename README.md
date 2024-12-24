@@ -61,25 +61,9 @@ All modern browser should use the `favicon.ico` at the root of the domain.
    <link rel="shortcut icon" sizes="196x196" href="/path/to/favicon-196.png">
    ```
 
-## The Images
+## Image Files
 
-Create at least this:
-
-| Sizes         | Name        | Purpose                                                                 |
-| ------------- | ----------- | ----------------------------------------------------------------------- |
-| 16x16 & 32x32 | favicon.ico | Default required by IE. Chrome and Safari may pick ico over png, sadly. |
-
-More about favicon.ico below. Yes, it's 1 file with multiple sizes.
-
-If you also sort of care about iOS and Android but are lazy:
-
-| Sizes   | Name            | Purpose                                                   |
-| ------- | --------------- | --------------------------------------------------------- |
-| 180x180 | favicon-180.png | General use iOS/Android icon, auto-downscaled by devices. |
-
-But keep in mind that icons with complex detail often don't downscale well. Often you have to tweak subtle design details for smaller sizes.
-
-If you're obsessive, create these too:
+### PNG
 
 | Sizes   | Name            | Purpose                                                                  |
 | ------- | --------------- | ------------------------------------------------------------------------ |
@@ -96,26 +80,20 @@ If you're obsessive, create these too:
 | 192x192 | favicon-192.png | [Android Devices](https://en.wikipedia.org/wiki/Favicon#Android_devices) |
 | 196x196 | favicon-196.png | Chrome for Android home screen icon                                      |
 
-## ICO File
+### ICO
 
-An .ico file is a container for multiple .bmp or .png icons of different sizes. In favicon.ico, create at least these:
+An `ICO` file is a container for multiple `PNG` icons of different sizes. In `favicon.ico`, create at least these:
+
+
+> Create your .ico out of optimized .png files.
 
 | Sizes | Name                                                                    |
 | ----- | ----------------------------------------------------------------------- |
 | 16x16 | IE9 address bar, Pinned site Jump List/Toolbar/Overlay                  |
 | 32x32 | New tab page in IE, taskbar button in Win 7+, Safari Read Later sidebar |
-| 48x48 | Windows site icons [^4]                                                 |
+| 64x64 | Windows site icons [^4], Safari Reading List sidebar in HiDPI/Retina    |
 
-If you're obsessive and don't mind 1-3kb extra size, also include these sizes in your .ico:
-
-| Sizes | Name                                                                 |
-| ----- | -------------------------------------------------------------------- |
-| 24x24 | IE9 Pinned site browser UI                                           |
-| 64x64 | Windows site icons [^4], Safari Reading List sidebar in HiDPI/Retina |
-
-Create your .ico out of optimized .png files.
-
-## SVG File
+### SVG
 
 Pinned tabs in Safari 9+ use an SVG vector mask for the favicon instead of any other PNG/ICO/etc. favicons that may be present. Vector artwork in the SVG file should be black only (no shades of black or other colors) with a transparent background. Also, a fill color needs to be defined in the <link> tag - a hex value or color shorthand will work. Here's the markup for adding the icon:
 
