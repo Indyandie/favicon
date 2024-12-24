@@ -4,15 +4,13 @@
 [@audreyfeldroy]: https://github.com/audreyfeldroy
 [favicon-cheat-sheet]: https://github.com/audreyfeldroy/favicon-cheat-sheet
 
-An fork (aberration) of the awesome [favicon-cheat-sheet] by [@audreyfeldroy].
+A fork (aberration) of the awesome [favicon-cheat-sheet] by [@audreyfeldroy].
 
 ## The HTML
 
 ### Basics
 
-For the main favicon itself, it's best for cross-browser compatibility not to
-use any HTML. Just name the file `favicon.ico` and place it in the root of your
-domain. [^1], [^2]
+For the main favicon itself, it's best for cross-browser compatibility not to use any HTML. Just name the file `favicon.ico` and place it in the root of your domain. [^1], [^2]
 
 This works in every desktop browser/version all the way back to IE6, except for SeaMonkey. [^1]
 
@@ -83,8 +81,7 @@ If you also sort of care about iOS and Android but are lazy:
 | ------- | --------------- | --------------------------------------------------------- |
 | 180x180 | favicon-180.png | General use iOS/Android icon, auto-downscaled by devices. |
 
-But keep in mind that icons with complex detail often don't downscale well.
-Often you have to tweak subtle design details for smaller sizes.
+But keep in mind that icons with complex detail often don't downscale well. Often you have to tweak subtle design details for smaller sizes.
 
 If you're obsessive, create these too:
 
@@ -134,7 +131,7 @@ Pinned tabs in Safari 9+ use an SVG vector mask for the favicon instead of any o
 - [ImageMagick](https://imagemagick.org/)
 
   ```shell
-  convert favicon-16.png favicon-32.png favicon.ico
+  magick convert favicon-16.png favicon-32.png favicon.ico
   ```
 
 ## Forcing a Favicon Refresh
@@ -144,18 +141,16 @@ Not normally needed. This is only for those frustrating times when you can't get
 - Clear the browser cache on Windows (Ctrl+F5 or Ctrl+Shift+R) and on Mac (Command + Shift + R).
 - Also close and reopen browser if IE.
 - If still stuck, try opening new tab. Or see http://stackoverflow.com/questions/2208933/how-do-i-force-a-favicon-refresh
-- Temporarily add explicit HTML markup and append a query string. Remove
-  this when you're done:
+- Temporarily add explicit HTML markup and append a query string. Remove this when you're done:
 
-```html
-<link rel="shortcut icon" href="http://www.yoursite.com/favicon.ico?v=2" />
-<link rel="icon" sizes="16x16 32x32" href="/favicon.ico?v=2">
-```
+  ```html
+  <link rel="shortcut icon" href="http://www.yoursite.com/favicon.ico?v=2" />
+  <link rel="icon" sizes="16x16 32x32" href="/favicon.ico?v=2">
+  ```
 
 For large versioned deployments, if all site visitors need their favicon force-refreshed in an extreme situation:
 
-- Add explicit HTML markup (customize the sizes part) and put your version
-  number in the filename.
+- Add explicit HTML markup (customize the sizes part) and put your version number in the filename.
 
 ```html
 <link rel="shortcut icon" href="/favicon-v2.ico" />
