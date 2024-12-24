@@ -1,17 +1,10 @@
-# favicon-cheat-sheet
+# Favicon
 
 [@mathiasbynens]: https://github.com/mathiasbynens
+[@audreyfeldroy]: https://github.com/audreyfeldroy
+[favicon-cheat-sheet]: https://github.com/audreyfeldroy/favicon-cheat-sheet
 
-A painfully obsessive cheat sheet to favicon sizes/types. Compiled from:
-
-- http://mathiasbynens.be/notes/rel-shortcut-icon <-- special thanks [@mathiasbynens]
-- http://mathiasbynens.be/notes/touch-icons <-- special thanks [@mathiasbynens]
-- http://www.jonathantneal.com/blog/understand-the-favicon/
-- https://en.wikipedia.org/wiki/Favicon.ico
-- http://snook.ca/archives/design/making_a_good_favicon
-- http://www.netmagazine.com/features/create-perfect-favicon
-- http://www.ravelrumba.com/blog/android-apple-touch-icon/
-- http://msdn.microsoft.com/en-us/library/ie/gg491740(v=vs.85).aspx
+An fork (aberration) of the awesome [favicon-cheat-sheet] by [@audreyfeldroy].
 
 ## The HTML
 
@@ -19,7 +12,7 @@ A painfully obsessive cheat sheet to favicon sizes/types. Compiled from:
 
 For the main favicon itself, it's best for cross-browser compatibility not to
 use any HTML. Just name the file `favicon.ico` and place it in the root of your
-domain. [^1] [^2]
+domain. [^1][^2]
 
 This works in every desktop browser/version all the way back to IE6, except for SeaMonkey. [^1]
 
@@ -310,3 +303,12 @@ Bear with me while I get this repo caught up. ❤️
 [^4]: No specifics given by MSDN.
 
 [^5]: http://blog.morzproject.com/convert-multiple-png-images-into-a-single-icon-file/
+
+- http://mathiasbynens.be/notes/rel-shortcut-icon <-- special thanks [@mathiasbynens]
+- http://mathiasbynens.be/notes/touch-icons <-- special thanks [@mathiasbynens]
+- http://www.jonathantneal.com/blog/understand-the-favicon/
+- https://en.wikipedia.org/wiki/Favicon.ico
+- http://snook.ca/archives/design/making_a_good_favicon
+- http://www.netmagazine.com/features/create-perfect-favicon
+- http://www.ravelrumba.com/blog/android-apple-touch-icon/
+- http://msdn.microsoft.com/en-us/library/ie/gg491740(v=vs.85).aspx
