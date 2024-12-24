@@ -99,14 +99,11 @@ If you're obsessive, create these too:
 | 144x144 | favicon-144.png | IE10 Metro tile for pinned site                                      |
 | 152x152 | favicon-152.png | iPad retina touch icon (Change for iOS 7: up from 144x144)           |
 | 180x180 | favicon-180.png | iPhone 6 plus                                                        |
-| 195x195 | favicon-195.png | Opera Speed Dial icon (Not working in Opera 15 and later)            |
 | 196x196 | favicon-196.png | Chrome for Android home screen icon                                  |
-| 228x228 | favicon-228.png | Opera Coast icon                                                     |
 
 ## ICO File
 
-An .ico file is a container for multiple .bmp or .png icons of different sizes.
-In favicon.ico, create at least these:
+An .ico file is a container for multiple .bmp or .png icons of different sizes. In favicon.ico, create at least these:
 
 | Sizes | Name                                                                    |
 | ----- | ----------------------------------------------------------------------- |
@@ -114,8 +111,7 @@ In favicon.ico, create at least these:
 | 32x32 | New tab page in IE, taskbar button in Win 7+, Safari Read Later sidebar |
 | 48x48 | Windows site icons [^4]                                                 |
 
-If you're obsessive and don't mind 1-3kb extra size, also include these sizes
-in your .ico:
+If you're obsessive and don't mind 1-3kb extra size, also include these sizes in your .ico:
 
 | Sizes | Name                                                                 |
 | ----- | -------------------------------------------------------------------- |
