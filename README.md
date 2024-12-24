@@ -120,10 +120,6 @@ If you're obsessive and don't mind 1-3kb extra size, also include these sizes in
 
 Create your .ico out of optimized .png files.
 
-TODO: get confirmation that IE9+ supports .ico files that contain .png files (issue `#9`_)
-
-.. _`#9`: https://github.com/audreyr/favicon-cheat-sheet/issues/9
-
 ## SVG File
 
 Pinned tabs in Safari 9+ use an SVG vector mask for the favicon instead of any other PNG/ICO/etc. favicons that may be present. Vector artwork in the SVG file should be black only (no shades of black or other colors) with a transparent background. Also, a fill color needs to be defined in the <link> tag - a hex value or color shorthand will work. Here's the markup for adding the icon:
@@ -165,10 +161,6 @@ For large versioned deployments, if all site visitors need their favicon force-r
 <link rel="shortcut icon" href="/favicon-v2.ico" />
 <link rel="icon" sizes="16x16 32x32" href="/favicon-v2.ico">
 ```
-
-TODO: find edge cases where this markup doesn't work (issue `#3`_).
-
-.. _`#3`: https://github.com/audreyr/favicon-cheat-sheet/issues/3
 
 ## FAQ
 
