@@ -1,9 +1,11 @@
 # favicon-cheat-sheet
 
+[@mathiasbynens]: https://github.com/mathiasbynens
+
 A painfully obsessive cheat sheet to favicon sizes/types. Compiled from:
 
-- http://mathiasbynens.be/notes/rel-shortcut-icon <-- special thanks `@mathiasbynens`_
-- http://mathiasbynens.be/notes/touch-icons <-- special thanks `@mathiasbynens`_
+- http://mathiasbynens.be/notes/rel-shortcut-icon <-- special thanks [@mathiasbynens]
+- http://mathiasbynens.be/notes/touch-icons <-- special thanks [@mathiasbynens]
 - http://www.jonathantneal.com/blog/understand-the-favicon/
 - https://en.wikipedia.org/wiki/Favicon.ico
 - http://snook.ca/archives/design/making_a_good_favicon
@@ -11,17 +13,15 @@ A painfully obsessive cheat sheet to favicon sizes/types. Compiled from:
 - http://www.ravelrumba.com/blog/android-apple-touch-icon/
 - http://msdn.microsoft.com/en-us/library/ie/gg491740(v=vs.85).aspx
 
-.. _`@mathiasbynens`: https://github.com/mathiasbynens
-
 ## The HTML
 
 ### Basics
 
 For the main favicon itself, it's best for cross-browser compatibility not to
 use any HTML. Just name the file `favicon.ico` and place it in the root of your
-domain. [1]_ [2]_
+domain. [^1] [^2]
 
-This works in every desktop browser/version all the way back to IE6, except for SeaMonkey. [1]_
+This works in every desktop browser/version all the way back to IE6, except for SeaMonkey. [^1]
 
 #### Optional But Encouraged
 
@@ -70,7 +70,7 @@ ieconfig.xml
 
 If you're obsessive, you want all this too:
 
-1. Largest to smallest apple-touch-icons [3]_:
+1. Largest to smallest apple-touch-icons [^3]:
 
    ```html
    <!-- For Iphone 6 plus running iOS 8: -->
@@ -156,7 +156,7 @@ In favicon.ico, create at least these:
 | ----- | ----------------------------------------------------------------------- |
 | 16x16 | IE9 address bar, Pinned site Jump List/Toolbar/Overlay                  |
 | 32x32 | New tab page in IE, taskbar button in Win 7+, Safari Read Later sidebar |
-| 48x48 | Windows site icons [4]_                                                 |
+| 48x48 | Windows site icons [^4]                                                 |
 
 If you're obsessive and don't mind 1-3kb extra size, also include these sizes
 in your .ico:
@@ -164,7 +164,7 @@ in your .ico:
 | Sizes | Name                                                                 |
 | ----- | -------------------------------------------------------------------- |
 | 24x24 | IE9 Pinned site browser UI                                           |
-| 64x64 | Windows site icons [4]_, Safari Reading List sidebar in HiDPI/Retina |
+| 64x64 | Windows site icons [^4], Safari Reading List sidebar in HiDPI/Retina |
 
 Create your .ico out of optimized .png files.
 
@@ -301,8 +301,12 @@ Bear with me while I get this repo caught up. ❤️
 
 ## References
 
-.. [1] http://mathiasbynens.be/notes/rel-shortcut-icon
-.. [2] http://www.w3.org/TR/html5/links.html#rel-icon
-.. [3] Adapted from http://mathiasbynens.be/notes/touch-icons
-.. [4] No specifics given by MSDN.
-.. [5] http://blog.morzproject.com/convert-multiple-png-images-into-a-single-icon-file/
+[^1]: http://mathiasbynens.be/notes/rel-shortcut-icon
+
+[^2]: http://www.w3.org/TR/html5/links.html#rel-icon
+
+[^3]: Adapted from http://mathiasbynens.be/notes/touch-icons
+
+[^4]: No specifics given by MSDN.
+
+[^5]: http://blog.morzproject.com/convert-multiple-png-images-into-a-single-icon-file/
