@@ -77,14 +77,13 @@ All modern browser should use the `favicon.ico` at the root of the domain.
 
 An `ICO` file is a container for multiple `PNG` icons of different sizes. In `favicon.ico`, create at least these:
 
-
 > Create your .ico out of optimized .png files.
 
 | Sizes | Name                                                                    |
 | ----- | ----------------------------------------------------------------------- |
-| 16x16 | IE9 address bar, Pinned site Jump List/Toolbar/Overlay                  |
+| 16x16 | Confirm...                                                              |
 | 32x32 | New tab page in IE, taskbar button in Win 7+, Safari Read Later sidebar |
-| 64x64 | Windows site icons [^4], Safari Reading List sidebar in HiDPI/Retina    |
+| 64x64 | Safari Reading List sidebar in HiDPI/Retina                             |
 
 ### SVG
 
@@ -132,18 +131,14 @@ Send a pull request...
 
 ## References
 
-[^1]: http://mathiasbynens.be/notes/rel-shortcut-icon
-
-[^2]: http://www.w3.org/TR/html5/links.html#rel-icon
-
-[^3]: Adapted from http://mathiasbynens.be/notes/touch-icons
-
-[^4]: No specifics given by MSDN.
-
-[^5]: http://blog.morzproject.com/convert-multiple-png-images-into-a-single-icon-file/
-
 - http://www.jonathantneal.com/blog/understand-the-favicon/
 - https://en.wikipedia.org/wiki/Favicon.ico
 - http://snook.ca/archives/design/making_a_good_favicon
 - http://www.netmagazine.com/features/create-perfect-favicon
 - http://www.ravelrumba.com/blog/android-apple-touch-icon/
+
+---
+
+## Footnotes
+
+[^1]: http://mathiasbynens.be/notes/rel-shortcut-icon
