@@ -67,16 +67,9 @@ All modern browser should use the `favicon.ico` at the root of the domain.
 
 | Sizes   | Name            | Purpose                                                                  |
 | ------- | --------------- | ------------------------------------------------------------------------ |
-| 32x32   | favicon-32.png  | Certain old but not too old Chrome versions mishandle ico                |
 | 48x48   | favicon-48.png  | [Android Devices](https://en.wikipedia.org/wiki/Favicon#Android_devices) |
-| 57x57   | favicon-57.png  | Standard iOS home screen (iPod Touch, iPhone first generation to 3G)     |
-| 76x76   | favicon-76.png  | iPad home screen icon                                                    |
 | 96x96   | favicon-96.png  | GoogleTV icon                                                            |
-| 120x120 | favicon-120.png | iPhone retina touch icon (Change for iOS 7: up from 114x114)             |
 | 128x128 | favicon-128.png | Chrome Web Store icon                                                    |
-| 144x144 | favicon-144.png | IE10 Metro tile for pinned site                                          |
-| 152x152 | favicon-152.png | iPad retina touch icon (Change for iOS 7: up from 144x144)               |
-| 180x180 | favicon-180.png | iPhone 6 plus                                                            |
 | 192x192 | favicon-192.png | [Android Devices](https://en.wikipedia.org/wiki/Favicon#Android_devices) |
 | 196x196 | favicon-196.png | Chrome for Android home screen icon                                      |
 
