@@ -1,0 +1,10 @@
+#!/usr/bin/env zsh
+#
+# Generate favicon.ico file from penpot exported pngs
+
+fav_pub='./images/penpot'
+
+rm $fav_pub/*.ico
+
+# create favicon.ico
+magick "${fav_pub}/favicon-16.png" "${fav_pub}/favicon-32.png" "${fav_pub}/favicon-64.png" "${fav_pub}/favicon.ico"
