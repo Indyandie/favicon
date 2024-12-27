@@ -12,48 +12,33 @@ All modern browser should use the `favicon.ico` at the root of the domain.
 
 ### IOS & Android (Optional)
 
-1. Add `apple-touch-icon-180x180.png` and/or `apple-touch-icon-180x180-precomposed.png` files to the root of the domain, this should suffice for IOS.
+1. Add `apple-touch-icon-180x180.png` files to the root of the site domain, this should suffice for IOS.
 2. Android may require the following.
    ```html
    <link rel="apple-touch-icon" href="/apple-touch-icon-180x180.png">
-   <link rel="apple-touch-icon-precomposed" href="/apple-touch-icon-180x180-precomposed.png">
    ```
 
 ### Almost All Favicon (Obsessive)
 
 1. Add largest to smallest apple-touch-icons to the root domain, and the `HTML` links [^3]:
 
-   - `apple-touch-icon-192x192.png`
-   - `apple-touch-icon-192x192-precomposed.png`
-   - `apple-touch-icon-180x180.png`
-   - `apple-touch-icon-180x180-precomposed.png`
-   - `apple-touch-icon-152x152.png`
-   - `apple-touch-icon-152x152-precomposed.png`
-   - `apple-touch-icon-120x120.png`
-   - `apple-touch-icon-120x120-precomposed.png`
-   - `apple-touch-icon-76x76.png`
-   - `apple-touch-icon-76x76-precomposed.png`
-   - `apple-touch-icon-57x57.png`
-   - `apple-touch-icon-57x57-precomposed.png`
-   - `apple-touch-icon.png` (`180px`)
-   - `apple-touch-icon-precomposed.png` (`180px`)
+- `apple-touch-icon-192x192.png`
+- `apple-touch-icon-180x180.png`
+- `apple-touch-icon-152x152.png`
+- `apple-touch-icon-120x120.png`
+- `apple-touch-icon-76x76.png`
+- `apple-touch-icon-57x57.png`
+- `apple-touch-icon.png` (`180px`)
 
-     ```html
-     <link rel="apple-touch-icon-precomposed" sizes="192x192" href="/apple-touch-icon-192x192.png">
-     <link rel="apple-touch-icon-precomposed" sizes="192x192" href="/apple-touch-icon-192x192-precomposed.png">
-     <link rel="apple-touch-icon-precomposed" sizes="180x180" href="/apple-touch-icon-180x180.png">
-     <link rel="apple-touch-icon-precomposed" sizes="180x180" href="/apple-touch-icon-180x180-precomposed.png">
-     <link rel="apple-touch-icon-precomposed" sizes="152x152" href="/apple-touch-icon-152x152.png">
-     <link rel="apple-touch-icon-precomposed" sizes="152x152" href="/apple-touch-icon-152x152-precomposed.png">
-     <link rel="apple-touch-icon-precomposed" sizes="120x120" href="/apple-touch-icon-120x120.png">
-     <link rel="apple-touch-icon-precomposed" sizes="120x120" href="/apple-touch-icon-120x120-precomposed.png">
-     <link rel="apple-touch-icon-precomposed" sizes="76x76" href="/apple-touch-icon-76x76.png">
-     <link rel="apple-touch-icon-precomposed" sizes="76x76" href="/apple-touch-icon-76x76-precomposed.png">
-     <link rel="apple-touch-icon-precomposed" sizes="57x57" href="/apple-touch-icon-57x57.png">
-     <link rel="apple-touch-icon-precomposed" sizes="57x57" href="/apple-touch-icon-57x57-precomposed.png">
-     <link rel="apple-touch-icon-precomposed" href="/apple-touch-icon.png">
-     <link rel="apple-touch-icon-precomposed" href="/apple-touch-icon-precomposed.png">
-     ```
+  ```html
+  <link rel="apple-touch-icon" sizes="192x192" href="/apple-touch-icon-192x192.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  ```
 
 2. Favicon Chrome for Android
 
