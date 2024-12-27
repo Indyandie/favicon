@@ -28,4 +28,4 @@ magick -background none $touch_icon_svg -resize "180x180" "apple-touch-icon.png"
 
 test -d $fav_pub || mkdir $fav_pub
 mv *.ico *.png "$fav_pub/"
-cp $fav_svg "$fav_pub/"
+cp $fav_svg mask-icon.svg "$fav_pub/"
