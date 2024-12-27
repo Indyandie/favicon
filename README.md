@@ -43,7 +43,7 @@ All modern browser should use the `favicon.ico` at the root of the domain.
 2. Favicon Chrome for Android
 
    ```html
-   <link rel="shortcut icon" sizes="196x196" href="/path/to/favicon-196.png">
+   <link rel="icon" sizes="196x196" href="/path/to/favicon-196.png">
    ```
 
 ## Image Files
