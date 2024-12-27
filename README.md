@@ -102,29 +102,6 @@ Pinned tabs in Safari 9+ use an SVG vector mask for the favicon instead of any o
   magick convert favicon-16.png favicon-32.png favicon.ico
   ```
 
-## Forcing a Favicon Refresh
-
-Not normally needed. This is only for those frustrating times when you can't get your favicon to refresh, during development:
-
-- Clear the browser cache on Windows (Ctrl+F5 or Ctrl+Shift+R) and on Mac (Command + Shift + R).
-- Also close and reopen browser if IE.
-- If still stuck, try opening new tab. Or see http://stackoverflow.com/questions/2208933/how-do-i-force-a-favicon-refresh
-- Temporarily add explicit HTML markup and append a query string. Remove this when you're done:
-
-  ```html
-  <link rel="shortcut icon" href="http://www.yoursite.com/favicon.ico?v=2" />
-  <link rel="icon" sizes="16x16 32x32" href="/favicon.ico?v=2">
-  ```
-
-For large versioned deployments, if all site visitors need their favicon force-refreshed in an extreme situation:
-
-- Add explicit HTML markup (customize the sizes part) and put your version number in the filename.
-
-```html
-<link rel="shortcut icon" href="/favicon-v2.ico" />
-<link rel="icon" sizes="16x16 32x32" href="/favicon-v2.ico">
-```
-
 ## Contribute
 
 Send a pull request...
