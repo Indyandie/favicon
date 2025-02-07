@@ -80,7 +80,6 @@ Pinned tabs in Safari 9+ use an SVG vector mask for the favicon instead of any o
 
 ## Tools
 
-- [OptiPNG](https://sourceforge.net/projects/optipng/)
 - [ImageMagick](https://imagemagick.org/)
 
   ```shell
