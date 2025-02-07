@@ -98,9 +98,3 @@ Send a pull request...
 - http://snook.ca/archives/design/making_a_good_favicon
 - http://www.netmagazine.com/features/create-perfect-favicon
 - http://www.ravelrumba.com/blog/android-apple-touch-icon/
-
----
-
-## Footnotes
-
-[^1]: http://mathiasbynens.be/notes/rel-shortcut-icon
